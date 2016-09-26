@@ -1,0 +1,30 @@
+{
+    "name": "Clickablebrand WP Package",
+    "repositories": [{
+        "type": "composer",
+        "url": "https://wpackagist.org"
+    }],
+    "require": {
+        "johnpbloch/wordpress": ">=4.0.13",
+        "wpackagist-plugin/contact-form-7": ">=4.5",
+        "wpackagist-plugin/contact-form-7-to-database-extension": ">=2.10.21",
+        "wpackagist-plugin/easy-wp-smtp": ">=1.2.3",
+        "wpackagist-plugin/mailpoet-contact-form-7": ">=1.0.7.5",
+        "wpackagist-plugin/wysija-newsletters": ">=2.7.5",
+        "wpackagist-plugin/wck-custom-fields-and-custom-post-types-creator": ">=1.3.3",
+        "wpackagist-plugin/wordpress-seo": ">=3.5",
+        "roots/sage": "8.4.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    },
+    "extra": {
+        "wordpress-install-dir": "my-project",
+        "installer-paths": {
+            "my-project/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "my-project/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}
