@@ -19,7 +19,7 @@ mv $THEME_PATH/sage $THEME_PATH/$THEME
 
 echo 'Downloading npm packages...'
 cd $THEME_PATH/$THEME/
-sudo npm install -g
+npm install g
 
 echo 'Installing bower packages'
 bower install
